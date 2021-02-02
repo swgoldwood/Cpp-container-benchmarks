@@ -84,56 +84,31 @@ public:
 /*
  * Simple benchmark test, testing a single container at a time for Vector, List, Set, and Unordered_Set
  */
-BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, VectorTest, std::vector<int64_t> )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, VectorTest, std::vector<int64_t> )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( VecListFixture, VectorTest )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, ListTest, std::list<int64_t> )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, ListTest, std::list<int64_t> )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( VecListFixture, ListTest )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, SetTest, std::set<int64_t> )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, SetTest, std::set<int64_t> )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( SetHashFixture, SetTest )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, HashTest, std::unordered_set<int64_t> )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, HashTest, std::unordered_set<int64_t> )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( SetHashFixture, HashTest )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
 /*
- * Now test with scattered = true, which simulates a real world application where data is unlikely to be
- * any of the CPU caches.
+ * Now test with scattered = true, which simulates a real world application where data is unlikely to be in cpu caches
  */
-BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, VectorTestScattered, std::vector<int64_t>, true )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, VectorTestScattered, std::vector<int64_t>, true )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( VecListFixture, VectorTestScattered )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, ListTestScattered, std::list<int64_t>, true )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( VecListFixture, ListTestScattered, std::list<int64_t>, true )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( VecListFixture, ListTestScattered )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, SetTestScattered, std::set<int64_t>, true )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, SetTestScattered, std::set<int64_t>, true )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( SetHashFixture, SetTestScattered )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
-BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, HashTestScattered, std::unordered_set<int64_t>, true )( benchmark::State& state )
-{
-    bench( state );
-}
+BENCHMARK_TEMPLATE_DEFINE_F( SetHashFixture, HashTestScattered, std::unordered_set<int64_t>, true )( benchmark::State& state ) { bench( state ); }
 BENCHMARK_REGISTER_F( SetHashFixture, HashTestScattered )->RangeMultiplier( 2 )->Range( START_SIZE, END_SIZE );
 
 BENCHMARK_MAIN();
