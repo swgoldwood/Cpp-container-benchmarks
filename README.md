@@ -1,7 +1,9 @@
 # Cpp-container-benchmarks
-C++ container benchmarks. Interesting results when blowing caches by scattering accesses.
+C++ container benchmarks.
 
-output:
+Benchmarks performance random access of vector, list, set and unordered_set in increasing sizes through random find calls. This is done first as standalone containers producing expected results. Then scattered flag is enabled which produces thousands of containers, which are randomly accessed, to simulate real-world applications where containers are most likely not in caches. This produces interesting results where a vector is faster than set up to around 2048 elements. Meaning a linear n number of reads of a 2048 size vector is on average faster than n log n reads for a set.
+
+output on i9 macbook pro 2020:
 
 ```
 /Users/sebastianwarren/CLionProjects/container_performance/cmake-build-release/container_performance
