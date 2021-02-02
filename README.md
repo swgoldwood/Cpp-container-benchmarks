@@ -1,7 +1,7 @@
 # Cpp-container-benchmarks
 C++ container benchmarks.
 
-Benchmarks performance random access of vector, list, set and unordered_set in increasing sizes through random find calls. This is done first as standalone containers producing expected results. Then scattered flag is enabled which produces thousands of containers, which are randomly accessed, to simulate real-world applications where containers are most likely not in caches. This produces interesting results where a vector is faster than set up to around 2048 elements. Meaning a linear n number of reads of a 2048 size vector is on average faster than n log n reads for a set.
+Benchmarks random access of vector, list, set and unordered_set in increasing sizes through random find calls. This is done first as standalone containers producing expected results. Then scattered flag is enabled that produces thousands of containers and are randomly accessed to simulate real-world applications where data is most likely not in caches. This produces interesting results showing a vector is faster than a set, up to around 2048 elements. Meaning a linear O(n) number of reads of a 2048 size vector is on average faster than O(n log n) reads for a set in busy applications.
 
 output on i9 macbook pro 2020:
 
