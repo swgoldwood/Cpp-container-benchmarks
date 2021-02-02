@@ -13,9 +13,9 @@ template<typename T, bool scattered = false>
 class BaseFixture : public benchmark::Fixture
 {
 public:
-    virtual void push( T& con, int64_t elem ) {}
+    virtual void push( T& con, int64_t elem ) = 0;
 
-    virtual int64_t find( T& con, int64_t elem ) { return 0; }
+    virtual int64_t find( T& con, int64_t elem ) = 0;
 
     void SetUp( const benchmark::State& state )
     {
