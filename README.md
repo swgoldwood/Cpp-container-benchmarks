@@ -1,9 +1,15 @@
 # Cpp-container-benchmarks
 C++ container benchmarks.
 
-Benchmarks random access of vector, list, set and unordered_set in increasing sizes by measuring performance of random find calls. This is done first as standalone containers producing expected results. Then scattered flag is enabled that produces thousands of containers and are randomly accessed to simulate real-world applications where data is most likely not in caches. This produces interesting results showing a vector is faster than a set, up to around 2048 elements. Meaning a linear O(n) number of reads of a 2048 size vector is on average faster than O(log n) reads for a set in busy applications.
+Benchmarks random access of vector, list, set and unordered_set in increasing sizes by measuring performance of random find calls. Add --benchmark_format=(json|csv) as argument to output these file formats, for python or excel munging.
 
-output on i9 macbook pro 2020:
+The benchmarking is first executed as standalone containers for each type producing results we would expect. List slower than vector. vector slower than set. unordered_set is very consistently fast.
+
+Then scatterRead bool is enabled that produces thousands of containers and are randomly accessed to simulate real-world applications where data is most likely not in caches. This produces interesting results showing a vector is faster than a set, up to around 2048 elements. Meaning a linear O(n) number of reads of a 2048 size vector is on average faster than O(log n) reads for a set in busy applications. Additionally vector is faster than unordered_map
+
+Finally the scatterWrite. Somewhat contrived but I think it simulates worst case access times, which could happen in real-world applications that have organically growing data sets.
+
+Output on i9 macbook pro 2020:
 
 ```
 /Users/sebastianwarren/CLionProjects/container_performance/cmake-build-release/container_performance
