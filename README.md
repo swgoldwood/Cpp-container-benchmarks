@@ -13,7 +13,7 @@ Output on i9 macbook pro 2020:
 
 ```
 /Users/sebastianwarren/CLionProjects/container_performance/cmake-build-release/container_performance
-2021-02-02T15:16:33+00:00
+2021-02-09T11:53:46+00:00
 Running /Users/sebastianwarren/CLionProjects/container_performance/cmake-build-release/container_performance
 Run on (16 X 2300 MHz CPU s)
 CPU Caches:
@@ -21,114 +21,166 @@ CPU Caches:
   L1 Instruction 32 KiB (x8)
   L2 Unified 256 KiB (x8)
   L3 Unified 16384 KiB (x1)
-Load Average: 3.62, 3.08, 2.72
---------------------------------------------------------------------------------------------------------------------
-Benchmark                                                                          Time             CPU   Iterations
---------------------------------------------------------------------------------------------------------------------
-VecListFixture<std::vector<int64_t>>/VectorTest/8                               25.0 ns         25.0 ns     29005925
-VecListFixture<std::vector<int64_t>>/VectorTest/16                              28.3 ns         28.3 ns     26971002
-VecListFixture<std::vector<int64_t>>/VectorTest/32                              32.0 ns         32.0 ns     23057869
-VecListFixture<std::vector<int64_t>>/VectorTest/64                              34.1 ns         34.1 ns     17810481
-VecListFixture<std::vector<int64_t>>/VectorTest/128                             49.7 ns         49.5 ns     15792015
-VecListFixture<std::vector<int64_t>>/VectorTest/256                             71.0 ns         70.8 ns     10736196
-VecListFixture<std::vector<int64_t>>/VectorTest/512                              103 ns          102 ns      6485024
-VecListFixture<std::vector<int64_t>>/VectorTest/1024                             220 ns          216 ns      3799371
-VecListFixture<std::vector<int64_t>>/VectorTest/2048                             293 ns          293 ns      2298863
-VecListFixture<std::vector<int64_t>>/VectorTest/4096                             533 ns          533 ns      1294810
-VecListFixture<std::vector<int64_t>>/VectorTest/8192                            1106 ns         1104 ns       663576
-VecListFixture<std::vector<int64_t>>/VectorTest/16384                           2060 ns         2058 ns       335045
-VecListFixture<std::vector<int64_t>>/VectorTest/32768                           5389 ns         5367 ns       100000
-VecListFixture<std::list<int64_t>>/ListTest/8                                   26.9 ns         26.8 ns     25828352
-VecListFixture<std::list<int64_t>>/ListTest/16                                  27.0 ns         27.0 ns     25661329
-VecListFixture<std::list<int64_t>>/ListTest/32                                  40.0 ns         39.9 ns     19738716
-VecListFixture<std::list<int64_t>>/ListTest/64                                  49.9 ns         49.9 ns     13328763
-VecListFixture<std::list<int64_t>>/ListTest/128                                 79.6 ns         79.6 ns      9078058
-VecListFixture<std::list<int64_t>>/ListTest/256                                  148 ns          148 ns      4891582
-VecListFixture<std::list<int64_t>>/ListTest/512                                  282 ns          281 ns      2066878
-VecListFixture<std::list<int64_t>>/ListTest/1024                                 540 ns          539 ns      1000000
-VecListFixture<std::list<int64_t>>/ListTest/2048                                1470 ns         1468 ns       437949
-VecListFixture<std::list<int64_t>>/ListTest/4096                                3482 ns         3477 ns       255843
-VecListFixture<std::list<int64_t>>/ListTest/8192                                5948 ns         5946 ns       109629
-VecListFixture<std::list<int64_t>>/ListTest/16384                              12839 ns        12836 ns        55592
-VecListFixture<std::list<int64_t>>/ListTest/32768                              25627 ns        25617 ns        27658
-SetHashFixture<std::set<int64_t>>/SetTest/8                                     14.8 ns         14.8 ns     49252765
-SetHashFixture<std::set<int64_t>>/SetTest/16                                    26.3 ns         26.2 ns     26964665
-SetHashFixture<std::set<int64_t>>/SetTest/32                                    30.0 ns         30.0 ns     23203702
-SetHashFixture<std::set<int64_t>>/SetTest/64                                    34.0 ns         34.0 ns     19913009
-SetHashFixture<std::set<int64_t>>/SetTest/128                                   36.9 ns         36.9 ns     18915085
-SetHashFixture<std::set<int64_t>>/SetTest/256                                   41.8 ns         41.7 ns     17621766
-SetHashFixture<std::set<int64_t>>/SetTest/512                                   45.1 ns         45.0 ns     15336919
-SetHashFixture<std::set<int64_t>>/SetTest/1024                                  45.7 ns         45.7 ns     15131307
-SetHashFixture<std::set<int64_t>>/SetTest/2048                                  50.6 ns         50.6 ns     10000000
-SetHashFixture<std::set<int64_t>>/SetTest/4096                                  68.3 ns         68.2 ns     11394713
-SetHashFixture<std::set<int64_t>>/SetTest/8192                                  83.1 ns         83.1 ns      8617082
-SetHashFixture<std::set<int64_t>>/SetTest/16384                                 91.4 ns         91.3 ns      7692477
-SetHashFixture<std::set<int64_t>>/SetTest/32768                                  138 ns          138 ns      5221893
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/8                          10.5 ns         10.5 ns     68812976
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/16                         10.4 ns         10.4 ns     66264034
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/32                         10.5 ns         10.5 ns     65552278
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/64                         10.5 ns         10.5 ns     68521310
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/128                        10.5 ns         10.5 ns     68193553
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/256                        10.4 ns         10.4 ns     66359517
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/512                        10.5 ns         10.5 ns     64310454
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/1024                       10.4 ns         10.4 ns     67135979
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/2048                       11.2 ns         11.2 ns     67987568
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/4096                       11.3 ns         11.3 ns     57919211
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/8192                       13.8 ns         13.8 ns     53453068
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/16384                      16.0 ns         16.0 ns     44075609
-SetHashFixture<std::unordered_set<int64_t>>/HashTest/32768                      17.5 ns         17.5 ns     37488887
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/8                45.1 ns         44.8 ns     15784216
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/16               57.5 ns         57.4 ns     10000000
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/32               54.5 ns         54.5 ns      9525282
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/64                102 ns          102 ns      6694017
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/128               174 ns          174 ns      4236596
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/256               233 ns          233 ns      3005130
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/512               321 ns          321 ns      2249271
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/1024              566 ns          565 ns      1329535
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/2048              879 ns          876 ns       787588
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/4096             1464 ns         1461 ns       485774
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/8192             2942 ns         2939 ns       198325
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/16384            5392 ns         5391 ns       131248
-VecListFixture<std::vector<int64_t>, true>/VectorTestScattered/32768           10109 ns        10095 ns        73768
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/8                    76.7 ns         76.4 ns     10713356
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/16                    125 ns          125 ns      4973004
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/32                    194 ns          193 ns      3390766
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/64                    261 ns          261 ns      2553719
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/128                   406 ns          406 ns      1370292
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/256                   702 ns          701 ns       815442
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/512                  1175 ns         1175 ns       608415
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/1024                 2348 ns         2336 ns       319515
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/2048                 3776 ns         3773 ns       194489
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/4096                 7476 ns         7473 ns        82305
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/8192                13288 ns        13286 ns        53240
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/16384               26243 ns        26240 ns        27210
-VecListFixture<std::list<int64_t>, true>/ListTestScattered/32768               51343 ns        51215 ns        10000
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/8                      93.3 ns         93.2 ns      8957707
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/16                      175 ns          175 ns      3974089
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/32                      226 ns          225 ns      2999824
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/64                      351 ns          351 ns      2126929
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/128                     494 ns          493 ns      1339277
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/256                     626 ns          625 ns      1189182
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/512                     747 ns          747 ns       929417
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/1024                    933 ns          931 ns       721434
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/2048                    938 ns          937 ns       559646
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/4096                   1142 ns         1141 ns       610102
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/8192                   1141 ns         1141 ns       584185
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/16384                  1265 ns         1264 ns       556231
-SetHashFixture<std::set<int64_t>, true>/SetTestScattered/32768                  1515 ns         1513 ns       539079
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/8           43.7 ns         43.7 ns     15846139
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/16          95.7 ns         95.7 ns      8374408
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/32           125 ns          125 ns      6020987
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/64           146 ns          146 ns      4257131
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/128          139 ns          139 ns      4701457
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/256          166 ns          166 ns      4613458
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/512          170 ns          170 ns      4163940
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/1024         190 ns          190 ns      3575880
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/2048         176 ns          176 ns      3959119
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/4096         168 ns          168 ns      3907951
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/8192         170 ns          169 ns      3977544
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/16384        167 ns          167 ns      4085182
-SetHashFixture<std::unordered_set<int64_t>, true>/HashTestScattered/32768        170 ns          170 ns      3772202
+Load Average: 2.56, 1.42, 1.02
+----------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                            Time             CPU   Iterations
+----------------------------------------------------------------------------------------------------------------------
+VecListFixture<std::vector<int64_t>>/Vector/8                                     21.8 ns         21.8 ns     29958315
+VecListFixture<std::vector<int64_t>>/Vector/16                                    23.5 ns         23.5 ns     30130076
+VecListFixture<std::vector<int64_t>>/Vector/32                                    27.8 ns         27.7 ns     24661781
+VecListFixture<std::vector<int64_t>>/Vector/64                                    32.8 ns         32.8 ns     19235631
+VecListFixture<std::vector<int64_t>>/Vector/128                                   42.9 ns         42.8 ns     16341166
+VecListFixture<std::vector<int64_t>>/Vector/256                                   61.0 ns         60.9 ns     10897316
+VecListFixture<std::vector<int64_t>>/Vector/512                                   86.8 ns         86.7 ns      8105417
+VecListFixture<std::vector<int64_t>>/Vector/1024                                   153 ns          153 ns      4595075
+VecListFixture<std::vector<int64_t>>/Vector/2048                                   272 ns          272 ns      2421073
+VecListFixture<std::vector<int64_t>>/Vector/4096                                   527 ns          526 ns      1303975
+VecListFixture<std::vector<int64_t>>/Vector/8192                                   971 ns          970 ns       695362
+VecListFixture<std::vector<int64_t>>/Vector/16384                                 1894 ns         1893 ns       363880
+VecListFixture<std::vector<int64_t>>/Vector/32768                                 3848 ns         3848 ns       179822
+VecListFixture<std::list<int64_t>>/List/8                                         22.3 ns         22.3 ns     31073823
+VecListFixture<std::list<int64_t>>/List/16                                        25.9 ns         25.9 ns     26788619
+VecListFixture<std::list<int64_t>>/List/32                                        32.3 ns         32.3 ns     21431305
+VecListFixture<std::list<int64_t>>/List/64                                        47.4 ns         47.4 ns     14384261
+VecListFixture<std::list<int64_t>>/List/128                                       76.3 ns         76.3 ns      9054925
+VecListFixture<std::list<int64_t>>/List/256                                        136 ns          136 ns      5270727
+VecListFixture<std::list<int64_t>>/List/512                                        249 ns          248 ns      2632579
+VecListFixture<std::list<int64_t>>/List/1024                                       485 ns          485 ns      1438840
+VecListFixture<std::list<int64_t>>/List/2048                                      1268 ns         1268 ns       532348
+VecListFixture<std::list<int64_t>>/List/4096                                      3133 ns         3132 ns       266318
+VecListFixture<std::list<int64_t>>/List/8192                                      5034 ns         5034 ns       141245
+VecListFixture<std::list<int64_t>>/List/16384                                    11627 ns        11626 ns        59808
+VecListFixture<std::list<int64_t>>/List/32768                                    23914 ns        23910 ns        28590
+SetHashFixture<std::set<int64_t>>/Set/8                                           14.5 ns         14.5 ns     47795272
+SetHashFixture<std::set<int64_t>>/Set/16                                          23.3 ns         23.3 ns     30237973
+SetHashFixture<std::set<int64_t>>/Set/32                                          28.1 ns         28.1 ns     24922828
+SetHashFixture<std::set<int64_t>>/Set/64                                          31.9 ns         31.9 ns     21914240
+SetHashFixture<std::set<int64_t>>/Set/128                                         34.8 ns         34.8 ns     19622024
+SetHashFixture<std::set<int64_t>>/Set/256                                         37.5 ns         37.5 ns     18315258
+SetHashFixture<std::set<int64_t>>/Set/512                                         39.8 ns         39.8 ns     17595102
+SetHashFixture<std::set<int64_t>>/Set/1024                                        44.7 ns         44.7 ns     15995868
+SetHashFixture<std::set<int64_t>>/Set/2048                                        50.8 ns         50.8 ns     13355720
+SetHashFixture<std::set<int64_t>>/Set/4096                                        58.5 ns         58.5 ns     11843530
+SetHashFixture<std::set<int64_t>>/Set/8192                                        64.8 ns         64.8 ns     10851872
+SetHashFixture<std::set<int64_t>>/Set/16384                                       93.8 ns         93.8 ns      7460460
+SetHashFixture<std::set<int64_t>>/Set/32768                                        133 ns          133 ns      4901583
+SetHashFixture<std::unordered_set<int64_t>>/Hash/8                                10.1 ns         10.1 ns     70771408
+SetHashFixture<std::unordered_set<int64_t>>/Hash/16                               9.93 ns         9.93 ns     67501109
+SetHashFixture<std::unordered_set<int64_t>>/Hash/32                               10.1 ns         10.1 ns     70852354
+SetHashFixture<std::unordered_set<int64_t>>/Hash/64                               9.98 ns         9.98 ns     69618491
+SetHashFixture<std::unordered_set<int64_t>>/Hash/128                              9.99 ns         9.99 ns     71080422
+SetHashFixture<std::unordered_set<int64_t>>/Hash/256                              9.93 ns         9.93 ns     70840164
+SetHashFixture<std::unordered_set<int64_t>>/Hash/512                              9.91 ns         9.91 ns     68945818
+SetHashFixture<std::unordered_set<int64_t>>/Hash/1024                             10.0 ns         10.0 ns     70852354
+SetHashFixture<std::unordered_set<int64_t>>/Hash/2048                             10.2 ns         10.2 ns     69560378
+SetHashFixture<std::unordered_set<int64_t>>/Hash/4096                             10.8 ns         10.8 ns     64572667
+SetHashFixture<std::unordered_set<int64_t>>/Hash/8192                             12.4 ns         12.4 ns     56684752
+SetHashFixture<std::unordered_set<int64_t>>/Hash/16384                            14.8 ns         14.8 ns     46605768
+SetHashFixture<std::unordered_set<int64_t>>/Hash/32768                            16.2 ns         16.2 ns     42523980
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/8                   40.5 ns         40.5 ns     17141654
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/16                  45.8 ns         45.8 ns     15308611
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/32                  53.8 ns         53.7 ns     13556433
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/64                  92.1 ns         92.1 ns      7792150
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/128                  164 ns          164 ns      4145741
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/256                  229 ns          229 ns      3062827
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/512                  317 ns          316 ns      2224963
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/1024                 511 ns          511 ns      1221214
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/2048                 834 ns          834 ns       882357
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/4096                1479 ns         1479 ns       483502
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/8192                2761 ns         2761 ns       265559
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/16384               5208 ns         5208 ns       100000
+VecListFixture<std::vector<int64_t>, true>/VectorScatterReads/32768               9769 ns         9769 ns        78494
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/8                       45.4 ns         45.4 ns     13978752
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/16                      88.6 ns         88.5 ns      7954365
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/32                       161 ns          161 ns      4136089
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/64                       244 ns          244 ns      2874861
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/128                      391 ns          391 ns      1959999
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/256                      703 ns          703 ns      1157446
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/512                     1115 ns         1115 ns       644728
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/1024                    1996 ns         1996 ns       357125
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/2048                    3433 ns         3433 ns       207619
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/4096                    6114 ns         6113 ns       109036
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/8192                   12069 ns        12069 ns        57446
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/16384                  26891 ns        26888 ns        26899
+VecListFixture<std::list<int64_t>, true>/ListScatterReads/32768                  46059 ns        46053 ns        14946
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/8                         53.2 ns         53.2 ns     12917751
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/16                         121 ns          121 ns      5943536
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/32                         213 ns          213 ns      3392015
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/64                         333 ns          333 ns      2146258
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/128                        482 ns          482 ns      1517770
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/256                        609 ns          609 ns      1101530
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/512                        819 ns          819 ns       818761
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/1024                      1017 ns         1017 ns       618610
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/2048                      1126 ns         1125 ns       544057
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/4096                      1161 ns         1161 ns       549692
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/8192                      1264 ns         1263 ns       527975
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/16384                     1263 ns         1262 ns       541364
+SetHashFixture<std::set<int64_t>, true>/SetScatterReads/32768                     1366 ns         1365 ns       521660
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/8              60.7 ns         60.7 ns     12083758
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/16              110 ns          110 ns      6742829
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/32              131 ns          131 ns      5599283
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/64              143 ns          143 ns      5020080
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/128             157 ns          157 ns      4666573
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/256             161 ns          161 ns      4499640
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/512             170 ns          170 ns      4119174
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/1024            181 ns          181 ns      3480959
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/2048            171 ns          171 ns      3845816
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/4096            174 ns          173 ns      3837088
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/8192            171 ns          171 ns      4227564
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/16384           170 ns          170 ns      4045588
+SetHashFixture<std::unordered_set<int64_t>, true>/HashScatterReads/32768           176 ns          176 ns      3976279
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/8                44.2 ns         44.2 ns     13392772
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/16               50.3 ns         50.2 ns     14175263
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/32               67.0 ns         67.0 ns     10749386
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/64                116 ns          116 ns      6410198
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/128               172 ns          172 ns      4038330
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/256               243 ns          243 ns      2941214
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/512               345 ns          345 ns      2019491
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/1024              557 ns          556 ns      1388173
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/2048              901 ns          901 ns       814664
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/4096             1547 ns         1546 ns       439820
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/8192             2781 ns         2779 ns       253531
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/16384            5357 ns         5353 ns       100000
+VecListFixture<std::vector<int64_t>, true, true>/VectorScatterRW/32768           10571 ns        10565 ns        68500
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/8                    89.5 ns         89.4 ns      7635336
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/16                    305 ns          305 ns      2257649
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/32                   1131 ns         1130 ns       671843
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/64                   2929 ns         2928 ns       234960
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/128                  6524 ns         6521 ns       117980
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/256                 13848 ns        13843 ns        51972
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/512                 29069 ns        29059 ns        24516
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/1024                59023 ns        58989 ns        10891
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/2048               122151 ns       122126 ns         6204
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/4096               240804 ns       240710 ns         2910
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/8192               474504 ns       473830 ns         1463
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/16384              889498 ns       889410 ns          783
+VecListFixture<std::list<int64_t>, true, true>/ListScatterRW/32768             1770331 ns      1768627 ns          426
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/8                      93.2 ns         93.1 ns      7528663
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/16                      227 ns          227 ns      3245639
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/32                      364 ns          363 ns      1917504
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/64                      512 ns          512 ns      1000000
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/128                     669 ns          669 ns      1128413
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/256                     811 ns          811 ns       926907
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/512                     988 ns          987 ns       720951
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/1024                   1243 ns         1239 ns       539408
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/2048                   1312 ns         1311 ns       534527
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/4096                   1384 ns         1383 ns       507404
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/8192                   1494 ns         1494 ns       487211
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/16384                  1568 ns         1567 ns       455545
+SetHashFixture<std::set<int64_t>, true, true>/SetScatterRW/32768                  1721 ns         1713 ns       414233
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/8            150 ns          149 ns      5112213
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/16           154 ns          154 ns      3820564
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/32           166 ns          166 ns      4276611
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/64           190 ns          190 ns      3803624
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/128          201 ns          201 ns      3569553
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/256          203 ns          203 ns      3428448
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/512          207 ns          207 ns      3383817
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/1024         205 ns          205 ns      3508209
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/2048         223 ns          223 ns      3231495
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/4096         220 ns          220 ns      3244391
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/8192         218 ns          218 ns      3226862
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/16384        218 ns          218 ns      3275252
+SetHashFixture<std::unordered_set<int64_t>, true, true>/HashScatterRW/32768        213 ns          213 ns      3348113
 
 Process finished with exit code 0
 ```
