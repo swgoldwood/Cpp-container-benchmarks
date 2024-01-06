@@ -5,7 +5,7 @@ Benchmarks random access of vector, list, set and unordered_set in increasing si
 
 The benchmarking is first executed as standalone containers for each type producing results we would expect. List slower than vector. vector slower than set. unordered_set is very consistently fast.
 
-Then scatterRead bool is enabled that produces thousands of containers and are randomly accessed to simulate real-world applications where data is most likely not in caches. This produces interesting results showing a vector is faster than a set, up to around 2048 elements. Meaning a linear O(n) number of reads of a 2048 size vector is on average faster than O(log n) reads for a set in busy applications. Additionally vector is faster than unordered_map
+Then scatterRead bool is enabled that produces thousands of containers and are randomly accessed to simulate real-world applications where data is most likely not in caches. This produces interesting results showing a vector is faster than a set, up to around 2048 elements. Meaning a linear O(n) number of reads of a 2048 size vector is on average faster than O(log n) reads for a set in busy applications. Additionally vector is faster than unordered_map up to 128 elements.
 
 Finally the scatterWrite. Somewhat contrived but I think it simulates worst case access times, which could happen in real-world applications that have organically growing data sets.
 
